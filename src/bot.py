@@ -2,7 +2,6 @@ import discord
 from util.secretsmanager import getsecrets
 
 class ROTKBot(discord.Client):
-    
     async def on_ready(self):
         print(f'Logged on as {self.user}!')
 
@@ -16,4 +15,4 @@ intents = discord.Intents.default()
 intents.message_content = True
 
 client = ROTKBot(intents=intents)
-client.run("NzU1MTQzNjkyMzQzMzEyNDQ0.G2y4Xj.idqcbGrNDnk6bMJcQE2sUd2Xfa4lhV0EqWcc9o")
+client.run(getsecrets()[0])
