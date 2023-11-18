@@ -33,7 +33,7 @@ def commandExists(msg, prefix):
     else: 
         return False
 
-async def logAndPrint(msg: Any, contents: str, sendMessage: bool):
+async def logAndPrint(self, msg: Any, contents: str, sendMessage: bool):
     """
     :Desc:
     Takes the contents and logs it to logs.txt always and then optionally
@@ -48,9 +48,12 @@ async def logAndPrint(msg: Any, contents: str, sendMessage: bool):
     :outputs: 
     None
     """
+    log = f"TIME: {datetime.now()} - USER: {msg.author} - COMMAND: {getCommand('//', msg.content)}\n - RESPONSE: {contents}"
+    logsChannel = self.get_channel(int("1175267246302572584"))
     with open("logs.txt", 'a') as file:
         #updatedContents = contents.replace('\n', '\\n')
-        file.write(f"TIME: {datetime.now()} - USER: {msg.author} - COMMAND: {getCommand('//', msg.content)}\n - RESPONSE: {contents}")
+        file.write(log)
     print(f'LOG: {contents}')
+    await logsChannel.send(log)
     if sendMessage:
         await msg.reply(contents)

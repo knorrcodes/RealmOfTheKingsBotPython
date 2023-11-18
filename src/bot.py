@@ -19,9 +19,9 @@ class ROTKBot(discord.Client):
                 if commandExists(msg=command, prefix=secrets[1]):
                     sys.path.append(f'{os.getcwd()}/src/commands')
                     imported_module = import_module(getCommand(prefix=secrets[1], msg=command).lower())
-                    await imported_module.execute(msg=message, args=args)
+                    await imported_module.execute(self, msg=message, args=args)
                 else: 
-                    await logAndPrint(message, "Hey! Sorry, it doesnt look like we have that command yet!", sendMessage=True)
+                    await logAndPrint(self, message, "Hey! Sorry, it doesnt look like we have that command yet!", sendMessage=True)
             except ImportError as err:
                 print(err)
             except BaseException as err:

@@ -73,4 +73,9 @@ TIME: 2023-11-14 13:26:49.928071 - USER: _subset_ - COMMAND: weather London
  - RESPONSE: Server disconnectedTIME: 2023-11-14 13:32:05.419207 - USER: _subset_ - COMMAND: weather newyork
  - RESPONSE: The current temperature in newyork, New York, United States of America is 53!TIME: 2023-11-14 13:32:17.640390 - USER: _subset_ - COMMAND: weather denver
  - RESPONSE: The current temperature in denver, Colorado, United States of America is 50!TIME: 2023-11-14 13:32:48.791834 - USER: _subset_ - COMMAND: weather Indianapolis
- - RESPONSE: The current temperature in Indianapolis, Indiana, United States of America is 8!
+ - RESPONSE: The current temperature in Indianapolis, Indiana, United States of America is 8!TIME: 2023-11-17 22:07:58.832064 - USER: _subset_ - COMMAND: me
+ - RESPONSE: User: _subset_
+ID: 304745620411777024TIME: 2023-11-17 22:08:49.614014 - USER: _subset_ - COMMAND: me
+ - RESPONSE: User: _subset_
+ID: 304745620411777024TIME: 2023-11-17 22:09:15.177317 - USER: _subset_ - COMMAND: weather Indianapolis
+ - RESPONSE: The current temperature in Indianapolis, Indiana, United States of America is 43!

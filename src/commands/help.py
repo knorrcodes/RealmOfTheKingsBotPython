@@ -2,7 +2,7 @@ from  util.helper import logAndPrint
 from util.secretsmanager import getsecrets
 import discord
 
-async def execute(msg, args):
+async def execute(self, msg, args):
     """
     :Desc: 
     Sends a Discord.Embed with details about the bot
@@ -21,6 +21,6 @@ async def execute(msg, args):
         )
         embed.add_field(name="me", value="Returns your User name and ID", inline=True)
         await msg.reply(embed=embed)
-        await logAndPrint(msg, contents="Successfully send ROTK Embed", sendMessage=False)
+        await logAndPrint(self, msg, contents="Successfully send ROTK Embed", sendMessage=False)
     except BaseException as err:
-        await logAndPrint(msg, err)
+        await logAndPrint(self, msg, err)

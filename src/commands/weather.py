@@ -1,7 +1,7 @@
 from util.helper import logAndPrint
 import python_weather as pw
 
-async def execute(msg, args):
+async def execute(self, msg, args):
     try:
         client = pw.Client(unit=pw.IMPERIAL)
         print(args)
@@ -11,7 +11,7 @@ async def execute(msg, args):
             country = weather.nearest_area.country 
             region = weather.nearest_area.region
             resp = f"The current temperature in {arg}, {region}, {country} is {weather.current.temperature}!"
-            await logAndPrint(msg, resp, True)
+            await logAndPrint(self, msg, resp, True)
         await client.close()
     except BaseException as err:
-        await logAndPrint(msg, err, False)
+        await logAndPrint(self, msg, err, False)

@@ -1,6 +1,6 @@
 from util.helper import logAndPrint
 
-async def execute(msg, args):
+async def execute(self, msg, args):
     """
     :Desc:
     Returns the User name and User ID
@@ -12,4 +12,4 @@ async def execute(msg, args):
     None
     """
     resp = f"User: {str(msg.author)}\nID: {str(msg.author.id)}"
-    await logAndPrint(msg, resp, sendMessage=True)
+    await logAndPrint(self, msg, resp, sendMessage=True)
