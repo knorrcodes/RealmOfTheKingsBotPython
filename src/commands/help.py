@@ -1,5 +1,5 @@
 from  util.helper import logAndPrint
-from util.secretsmanager import getsecrets
+from src.util.aws import getsecrets
 import discord
 
 async def execute(self, msg, args):

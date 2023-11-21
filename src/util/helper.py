@@ -48,7 +48,11 @@ async def logAndPrint(self, msg: Any, contents: str, sendMessage: bool):
     :outputs: 
     None
     """
-    log = f"TIME: {datetime.now()} - USER: {msg.author} - COMMAND: {getCommand('//', msg.content)}\n - RESPONSE: {contents}"
+    log = ""
+    if msg == "":
+        log = f"TIME: {datetime.now()} - RESPONSE: {contents}"
+    else:
+        log = f"TIME: {datetime.now()} - USER: {msg.author} - COMMAND: {getCommand('//', msg.content)}\n - RESPONSE: {contents}"
     logsChannel = self.get_channel(int("1175267246302572584"))
     with open("logs.txt", 'a') as file:
         #updatedContents = contents.replace('\n', '\\n')

@@ -78,4 +78,35 @@ TIME: 2023-11-14 13:26:49.928071 - USER: _subset_ - COMMAND: weather London
 ID: 304745620411777024TIME: 2023-11-17 22:08:49.614014 - USER: _subset_ - COMMAND: me
  - RESPONSE: User: _subset_
 ID: 304745620411777024TIME: 2023-11-17 22:09:15.177317 - USER: _subset_ - COMMAND: weather Indianapolis
- - RESPONSE: The current temperature in Indianapolis, Indiana, United States of America is 43!
+ - RESPONSE: The current temperature in Indianapolis, Indiana, United States of America is 43!TIME: 2023-11-20 21:45:45.853677 - USER: _subset_ - COMMAND: me
+ - RESPONSE: User: _subset_
+ID: 304745620411777024TIME: 2023-11-20 21:46:11.216264 - USER: _subset_ - COMMAND: me
+ - RESPONSE: User: _subset_
+ID: 304745620411777024TIME: 2023-11-20 21:46:18.010075 - USER: _subset_ - COMMAND: me
+ - RESPONSE: User: _subset_
+ID: 304745620411777024TIME: 2023-11-20 21:46:46.125769 - USER: _subset_ - COMMAND: me hello how are you ”you=me”
+ - RESPONSE: User: _subset_
+ID: 304745620411777024TIME: 2023-11-20 21:49:20.864577 - USER: _subset_ - COMMAND: me event1 running tomorrow 11am
+ - RESPONSE: User: _subset_
+ID: 304745620411777024TIME: 2023-11-20 21:49:49.646232 - USER: _subset_ - COMMAND: me event1 running tomorrow 11am
+ - RESPONSE: User: _subset_
+ID: 304745620411777024TIME: 2023-11-20 21:54:07.572291 - USER: _subset_ - COMMAND: me
+ - RESPONSE: User: _subset_
+ID: 304745620411777024TIME: 2023-11-20 22:00:55.546132 - USER: _subset_ - COMMAND: event new newEventName Running 11/25/23 11:00am BDHS
+ - RESPONSE: putS3Object() missing 1 required positional argument: 'type'TIME: 2023-11-20 22:01:32.439754 - USER: _subset_ - COMMAND: event new newEventName Running 11/25/23 11:00am BDHS
+ - RESPONSE: object Events can't be used in 'await' expressionTIME: 2023-11-20 22:10:29.718637 - USER: _subset_ - COMMAND: event addParticipant 13863
+ - RESPONSE: list indices must be integers or slices, not strTIME: 2023-11-20 22:13:05.615814 - USER: _subset_ - COMMAND: event addParticipant 13863
+ - RESPONSE: list indices must be integers or slices, not strTIME: 2023-11-20 22:23:53.851318 - USER: _subset_ - COMMAND: event addParticipant 13863
+ - RESPONSE: Users.createUser() takes 1 positional argument but 2 were givenTIME: 2023-11-20 22:24:14.248178 - USER: _subset_ - COMMAND: event addParticipant 13863
+ - RESPONSE: 'users'TIME: 2023-11-20 22:25:17.863514 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: 'users'TIME: 2023-11-20 22:28:23.044177 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: 'users'TIME: 2023-11-20 22:29:38.445891 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: 'Users' object has no attribute 'id'TIME: 2023-11-20 22:30:35.800089 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: Object of type Member is not JSON serializableTIME: 2023-11-20 22:33:16.164276 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: 'Users' object is not subscriptableTIME: 2023-11-20 22:34:22.744894 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: '90367'TIME: 2023-11-20 22:36:13.239626 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: 304745620411777024TIME: 2023-11-20 22:38:43.717685 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: Circular reference detectedTIME: 2023-11-20 22:38:54.927570 - USER: _subset_ - COMMAND: getEvent
+ - RESPONSE: Hey! Sorry, it doesnt look like we have that command yet!TIME: 2023-11-20 22:40:39.540629 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: Circular reference detectedTIME: 2023-11-20 22:40:56.550349 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: Circular reference detected
