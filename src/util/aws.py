@@ -18,6 +18,11 @@ def getS3Object(type):
     return json.loads(resp["Body"].read().decode('utf-8'))
 
 def putS3Object(new_json, old_json, type):
+    try: 
+        json.dumps(new_json)
+    except BaseException as err:
+        print("Error in Encoding")
+        print(err)
     client = boto3.client("s3")
     first = client.put_object(
         Bucket="rotk-bot",
@@ -29,3 +34,4 @@ def putS3Object(new_json, old_json, type):
         Key=f"PREVIOUS_{type.upper()}",
         Body=json.dumps(old_json).encode("utf-8")
         )
+    print(first, second)

@@ -109,4 +109,40 @@ ID: 304745620411777024TIME: 2023-11-20 22:00:55.546132 - USER: _subset_ - COMMAN
  - RESPONSE: Circular reference detectedTIME: 2023-11-20 22:38:54.927570 - USER: _subset_ - COMMAND: getEvent
  - RESPONSE: Hey! Sorry, it doesnt look like we have that command yet!TIME: 2023-11-20 22:40:39.540629 - USER: _subset_ - COMMAND: event addParticipant 90367
  - RESPONSE: Circular reference detectedTIME: 2023-11-20 22:40:56.550349 - USER: _subset_ - COMMAND: event addParticipant 90367
- - RESPONSE: Circular reference detected
+ - RESPONSE: Circular reference detectedTIME: 2023-11-21 09:53:51.770698 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: Circular reference detectedTIME: 2023-11-21 09:54:43.552655 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: Circular reference detectedTIME: 2023-11-21 09:58:39.130593 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: Circular reference detectedTIME: 2023-11-22 10:43:45.300471 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: Circular reference detectedTIME: 2023-11-22 10:49:03.648581 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: Circular reference detectedTIME: 2023-11-22 10:49:33.055388 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: Circular reference detectedTIME: 2023-11-22 10:54:08.391649 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: object NoneType can't be used in 'await' expressionTIME: 2023-11-22 10:54:57.930136 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: object NoneType can't be used in 'await' expressionTIME: 2023-11-22 10:57:15.753147 - USER: _subset_ - COMMAND: event addParticipant 90367
+ - RESPONSE: Success!TIME: 2023-11-22 10:59:26.504092 - USER: _subset_ - COMMAND: me
+ - RESPONSE: User: _subset_
+ID: 304745620411777024TIME: 2023-11-22 11:03:39.416164 - USER: _subset_ - COMMAND: event listEvents
+ - RESPONSE: 'module' object is not callableTIME: 2023-11-22 11:11:49.421835 - USER: _subset_ - COMMAND: event listEvents
+ - RESPONSE: 'dict' object is not callableTIME: 2023-11-22 11:23:45.458793 - USER: _subset_ - COMMAND: help
+ - RESPONSE: Successfully send ROTK EmbedTIME: 2023-11-22 13:59:25.985305 - USER: _subset_ - COMMAND: help
+ - RESPONSE: Successfully send ROTK EmbedTIME: 2023-11-22 14:02:11.304198 - USER: _subset_ - COMMAND: help
+ - RESPONSE: Successfully send ROTK EmbedTIME: 2023-11-22 14:04:19.749081 - USER: _subset_ - COMMAND: addEvent darrinTestEvent running 12/1/23 10am Plainfield
+ - RESPONSE: Hey! Sorry, it doesnt look like we have that command yet!TIME: 2023-11-22 14:18:14.576949 - USER: _subset_ - COMMAND: event addParticipant 91448
+ - RESPONSE: Success!TIME: 2023-11-22 14:27:57.588111 - USER: _subset_ - COMMAND: event addParticipant 91448
+ - RESPONSE: object str can't be used in 'await' expressionTIME: 2023-11-22 14:29:18.277695 - USER: _subset_ - COMMAND: event addParticipant 91448
+ - RESPONSE: Failed!TIME: 2023-11-22 14:31:13.683255 - USER: _subset_ - COMMAND: event addParticipant 274884
+ - RESPONSE: Failed!TIME: 2023-11-22 14:37:35.593793 - USER: _subset_ - COMMAND: event listEvents
+ - RESPONSE: 'current'TIME: 2023-11-22 14:39:30.289784 - USER: _subset_ - COMMAND: event listEvents
+ - RESPONSE: 'current'TIME: 2023-11-22 14:44:30.999224 - USER: jknop2 - COMMAND: event addParticipant 91448
+ - RESPONSE: Success!TIME: 2023-11-22 14:44:40.348821 - USER: _subset_ - COMMAND: event listEvents
+ - RESPONSE: 'current'TIME: 2023-11-22 16:26:25.419944 - USER: _subset_ - COMMAND: event getEventDetails 10397
+ - RESPONSE: local variable 'key' referenced before assignmentTIME: 2023-11-22 16:27:28.707224 - USER: _subset_ - COMMAND: event addParticipant 10397
+ - RESPONSE: Failed!TIME: 2023-11-22 16:29:05.372501 - USER: _subset_ - COMMAND: event addParticipant 10397
+ - RESPONSE: Failed!TIME: 2023-11-22 16:31:19.373529 - USER: _subset_ - COMMAND: event addParticipant 10397
+ - RESPONSE: Failed!TIME: 2023-11-22 16:32:28.066563 - USER: _subset_ - COMMAND: event addParticipant 10397
+ - RESPONSE: Failed!TIME: 2023-11-22 16:32:53.139961 - USER: _subset_ - COMMAND: event addParticipant 10397
+ - RESPONSE: Failed!TIME: 2023-11-22 16:33:52.479426 - USER: _subset_ - COMMAND: event addParticipant 10397
+ - RESPONSE: Failed!TIME: 2023-11-22 16:34:18.924769 - USER: _subset_ - COMMAND: event addParticipant 10397
+ - RESPONSE: Failed!TIME: 2023-11-22 16:34:40.843406 - USER: _subset_ - COMMAND: event addParticipant 10397
+ - RESPONSE: Success!TIME: 2023-11-22 16:41:47.398942 - USER: _subset_ - COMMAND: event deleteEvent 90367
+ - RESPONSE: object str can't be used in 'await' expressionTIME: 2023-11-22 16:44:02.834042 - USER: _subset_ - COMMAND: listEvents
+ - RESPONSE: Hey! Sorry, it doesnt look like we have that command yet!

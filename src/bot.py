@@ -4,8 +4,6 @@ from util.helper import getCommand, commandExists, logAndPrint
 import os
 from importlib import import_module
 import sys
-from classes.events import Events
-from classes.users import Users
 
 class ROTKBot(discord.Client):
     async def on_ready(self):
@@ -35,9 +33,3 @@ intents.message_content = True
 
 client = ROTKBot(intents=intents)
 client.run(getsecrets()[0])
-
-# t5 = Events("test5", "test5", "test5", "test5", "test5")
-# print(t5.getEvent())
-# u1 = Users("dknorr", "12345").addEventToUser({"55555": {"stuff": "to add"}})
-# u1.addEventToUser({"66666": {"stuff": "to add"}})
-# print(u1.getUser())

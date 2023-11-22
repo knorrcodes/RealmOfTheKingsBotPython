@@ -24,6 +24,7 @@ class Users():
         new_data = old_data
         new_data["users"][self.userId] = new_user
         resp = putS3Object(new_data, old_data, "users")
+        print(resp)
 
     def addEventToUser(self, event_obj):
         self.currentEvents.append(event_obj)

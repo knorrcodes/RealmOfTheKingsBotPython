@@ -12,6 +12,7 @@ class Events():
         self.dateCreated = str(datetime.now())
         self.id = str(self.getUniqueEventId())
         self.participants = []
+        self.current = True
         
         self.createEvent()
 
@@ -29,6 +30,7 @@ class Events():
         }
 
     def createEvent(self) -> None:
+        print("6")
         # Try and append to a copy of the events.json file and if successfull then append to the actualy
         # do this in case it fails, it wont destroy the actual document
         new_event = {
@@ -38,16 +40,19 @@ class Events():
             "dateScheduled": self.eventDate,
             "eventStart": self.eventTime,
             "location": self.location,
-            "participants": self.participants
+            "participants": self.participants,
+            "current": self.current
         }
         
         old_data = getS3Object("events")
-        
+        print("7")
         new_data = old_data
         new_data["events"][self.id] = new_event
         resp = putS3Object(new_data, old_data, "events")
+        return resp
     
     def getUniqueEventId(self) -> str:
+        print("5")
         data = getS3Object("events")
         keys = data["events"].keys()
         # for event_dict in data['events']:
